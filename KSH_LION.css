@@ -1,0 +1,31 @@
+/* Global */
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-blue: #2567e8;
+  --color-facebook-blue: #2788d3;
+  --color-green: #18b613;
+  --color-yellow: #eebf3c;
+  --color-darkgrray: #686868;
+  --color-black: #0c0c0c;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
