@@ -89,10 +89,10 @@ button {
   position: relative;
   text-align: center;
   border-bottom: 1px solid var(--color-light-gray);
-  width: 100%;
 }
 
 .header__title {
+  font-weight: var(--weight-regular);
   display: inline-block;
   text-align: center;
 }
@@ -112,13 +112,13 @@ button {
 }
 
 .login__description {
-  margin: 20px 16px 4px 16px;
+  margin: 20px 30px 4px 30px;
   font-weight: 200;
 }
 
 .login__check-btn {
   position: relative;
-  margin: 12px 16px;
+  margin: 12px 30px;
 }
 
 .login__check-txt {
@@ -129,12 +129,16 @@ button {
   cursor: pointer;
 }
 
-.login__check-img {
+#login__check-empty-img,
+#login__check-img {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%) scale(1.1);
   cursor: pointer;
+}
+#login__check-img.invisible {
+  display: none;
 }
 
 button.login__btn {
@@ -144,7 +148,7 @@ button.login__btn {
   background-color: var(--color-blue);
   border-radius: var(--size-border-radius);
   padding: 20px;
-  margin: 10px 16px;
+  margin: 10px 30px;
   opacity: 0.9;
 }
 
@@ -155,8 +159,9 @@ button.login__btn:hover {
 .login__join {
   color: var(--color-gray);
   font-size: 16px;
+  font-weight: var(--weight-regular);
   text-align: center;
-  margin: 10px 16px;
+  margin: 10px 30px;
 }
 
 .login__join-membership {
@@ -181,22 +186,22 @@ button.login__btn:hover {
 span.or-text:before {
   content: '';
   position: absolute;
-  margin-left: 16px;
+  margin-left: 30px;
   top: 50%;
   left: 0;
   background-color: var(--color-light-gray);
-  width: 42%;
+  width: 40%;
   height: 1px;
 }
 
 .or-text:after {
   content: '';
   position: absolute;
-  margin-right: 16px;
+  margin-right: 30px;
   top: 50%;
   right: 0;
   background-color: var(--color-light-gray);
-  width: 42%;
+  width: 40%;
   height: 1px;
 }
 
@@ -204,6 +209,7 @@ span.or-text:before {
 .social-login {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 
 a.btn {
@@ -211,11 +217,11 @@ a.btn {
   text-align: center;
   vertical-align: baseline;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: var(--weight-regular);
   border: 1.6px solid var(--color-gray);
   border-radius: var(--size-border-radius);
   padding: 16px 20px;
-  margin: 6px 16px;
+  margin: 6px 30px;
   opacity: 1;
 }
 
