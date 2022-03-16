@@ -3,29 +3,241 @@
 :root {
   /* Color */
   --color-white: #ffffff;
+  --color-light-white: #eeeeee;
   --color-blue: #2567e8;
   --color-facebook-blue: #2788d3;
+  --color-light-blue: #5caae0;
   --color-green: #18b613;
   --color-yellow: #eebf3c;
-  --color-darkgrray: #686868;
+  --color-gray: #858585;
+  --color-dark-gray: #686868;
+  --color-light-gray: #bbbabb;
   --color-black: #0c0c0c;
+
+  /* Font Size */
+  --font-large: 26px;
+  --font-medium: 20px;
+  --font-regular: 16px;
+  --font-small: 14px;
 
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-medium: 500;
   --weight-regular: 400;
+  --weight-light: 300;
 
   /* Size */
   --size-border-radius: 4px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: var(--font-small);
   margin: 0;
   cursor: default;
 }
 
 a {
   text-decoration: none;
+  color: var(--color-gray);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 20px 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#login {
+  background-color: var(--color-white);
+  height: 100vh;
+}
+
+.inner {
+  width: 600px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--size-border-radius);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Header */
+.header {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid var(--color-light-gray);
+  width: 100%;
+}
+
+.header__title {
+  display: inline-block;
+  text-align: center;
+}
+
+.header__close {
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Login */
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__description {
+  margin: 20px 16px 4px 16px;
+  font-weight: 200;
+}
+
+.login__check-btn {
+  position: relative;
+  margin: 12px 16px;
+}
+
+.login__check-txt {
+  color: var(--color-gray);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-light);
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.login__check-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scale(1.1);
+  cursor: pointer;
+}
+
+button.login__btn {
+  color: var(--color-white);
+  font-size: var(--font-large);
+  font-weight: var(--weight-semi-bold);
+  background-color: var(--color-blue);
+  border-radius: var(--size-border-radius);
+  padding: 20px;
+  margin: 10px 16px;
+  opacity: 0.9;
+}
+
+button.login__btn:hover {
+  opacity: 1;
+}
+
+.login__join {
+  color: var(--color-gray);
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 16px;
+}
+
+.login__join-membership {
+  padding-right: 8px;
+  cursor: pointer;
+}
+.login__join-findpw {
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.or-text {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: var(--color-gray);
+  font-size: var(--font-regular);
+  padding: 16px 20px;
+  margin-top: 4px;
+}
+
+span.or-text:before {
+  content: '';
+  position: absolute;
+  margin-left: 16px;
+  top: 50%;
+  left: 0;
+  background-color: var(--color-light-gray);
+  width: 42%;
+  height: 1px;
+}
+
+.or-text:after {
+  content: '';
+  position: absolute;
+  margin-right: 16px;
+  top: 50%;
+  right: 0;
+  background-color: var(--color-light-gray);
+  width: 42%;
+  height: 1px;
+}
+
+/* Social Login */
+.social-login {
+  display: flex;
+  flex-direction: column;
+}
+
+a.btn {
+  position: relative;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1.6px solid var(--color-gray);
+  border-radius: var(--size-border-radius);
+  padding: 16px 20px;
+  margin: 6px 16px;
+  opacity: 1;
+}
+
+a.btn:hover {
+  opacity: 0.8;
+}
+
+img.social-login__img {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%) scale(1.2);
+}
+
+a.btn-facebook {
+  border: 1.6px solid var(--color-light-blue);
+}
+
+a.btn-naver {
+  border: 1.6px solid var(--color-green);
+}
+
+a.btn-kakao {
+  border: 1.6px solid var(--color-yellow);
 }

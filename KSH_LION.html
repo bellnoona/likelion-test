@@ -18,29 +18,65 @@
   <body>
     <section id="login">
       <div class="inner">
+        <!-- Header -->
         <div class="header">
-          <div class="header__title">로그인 또는 회원가입</div>
-          <img src="imgs/close.png" alt="닫기" />
+          <h2 class="header__title">로그인 또는 회원가입</h2>
+          <img src="imgs/close.png" alt="닫기" class="header__close" />
         </div>
+        <!-- Login -->
         <div class="login">
-          <div class="login__description">
+          <h1 class="login__description">
             위니브에서 여러분의 궁금증을 해결하세요! :)
+          </h1>
+          <div class="login__check-btn">
+            <img
+              class="login__check-img"
+              src="imgs/icon_check_empty.png"
+              alt="로그인 상태 유지"
+            />
+            <span class="login__check-txt">로그인 상태 유지</span>
           </div>
-          <p class="login__check-btn">
-            <img src="imgs/icon_check_empty.png" alt="로그인 상태 유지" />로그인
-            상태 유지
-          </p>
           <button class="login__btn">로그인</button>
           <div class="login__join">
-            <span>회원가입</span> | <span>아이디/비밀번호 찾기</span>
+            <span class="login__join-membership">회원가입</span> |
+            <span class="login__join-findpw">아이디/비밀번호 찾기</span>
           </div>
-          <span>또는</span>
+          <span class="or-text">또는</span>
         </div>
+        <!-- Social Login -->
         <div class="social-login">
-          <a href="https://www.google.co.kr/">구글 계정으로 로그인</a>
-          <a href="https://www.facebook.com/">페이스북 계정으로 로그인</a>
-          <a href="https://www.naver.com/">네이버 계정으로 로그인</a>
-          <a href="https://www.kakaocorp.com/page/">카카오톡 계정으로 로그인</a>
+          <a class="btn btb-google" href="https://www.google.co.kr/">
+            <img
+              class="social-login__img"
+              src="imgs/icon_google.png"
+              alt="google logo"
+            />
+            <span>구글 계정으로 로그인</span>
+          </a>
+          <a class="btn btn-facebook" href="https://www.facebook.com/">
+            <img
+              class="social-login__img"
+              src="imgs/icon_facebook.png"
+              alt="facebook logo"
+            />
+            <span>페이스북 계정으로 로그인</span>
+          </a>
+          <a class="btn btn-naver" href="https://www.naver.com/">
+            <img
+              class="social-login__img"
+              src="imgs/icon_naver.png"
+              alt="naver logo"
+            />
+            <span>네이버 계정으로 로그인</span>
+          </a>
+          <a class="btn btn-kakao" href="https://www.kakaocorp.com/page/">
+            <img
+              class="social-login__img"
+              src="imgs/icon_kakao.png"
+              alt="kakao logo"
+            />
+            <span>카카오톡 계정으로 로그인</span>
+          </a>
         </div>
       </div>
     </section>
