@@ -217,7 +217,6 @@ span.or-text:before {
 a.btn {
   position: relative;
   text-align: center;
-  vertical-align: baseline;
   font-size: 18px;
   font-weight: var(--weight-regular);
   border: 1.6px solid var(--color-gray);
